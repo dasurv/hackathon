@@ -1,0 +1,64 @@
+<Html>
+<head> 
+<h1>
+Application Form
+</h1>
+<h3> (Application for bus pass) </h3>
+</head>
+<body bgcolor="Lightskyblue">
+
+<form method="POST" id="registration" action="file:///C:/Users/nagaamara.ganga/Desktop/try/registration%20success.html">
+<label> Firstname : </label>       
+<input type="text" name="firstname" size="15"/> <br> <br>
+<label> Middlename : </label>   
+<input type="text" name="middlename" size="15"/> <br> <br>
+<label> Lastname : </label>       
+<input type="text" name="lastname" size="15"/> <br> <br>
+<label> 
+Gender :
+ <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br><br>
+<label for="DOB">Date of Birth:</label>
+  <input type="date" id="DOB" name="DOB"><br><br>
+Registration User type :
+</label> 
+<select>
+<option value="User">User type</option>
+<option value="Student">Student</option>
+<option value="Employee">Employee</option>
+<option value="Senior Citizen">Senior Citizen</option>
+<option value="Physically Handicapped">Physically Handicapped</option>
+</select><br><br>
+<label> Aadhar number : </label>       
+<input type="text" name="Aadhar number" size="15"/> <br> <br>
+<label> Adress : </label>
+<input type="text" name="Address" style = "length:200px" /><br><br>
+<label> Student id/Employee id/Age proof/Medical certificate : </label>  
+<input type="submit" value="Upload"><br><br>
+Pass route :    
+<label> From :</label>       
+<input type="text" name="From" size="15"/> 
+<label> To :</label>       
+<input type="text" name="To" size="15"/> <br> <br>
+Pass duration :    
+<label for="From">From:</label>
+  <input type="date" id="From" name="From">
+<label for="To">To:</label>
+  <input type="date" id="To" name="To"><br><br>
+Payment Mode:
+<input type="radio" id="payment" name="payment" value="Credit Card">
+  <label for="payment">Credit Card</label>
+<input type="radio" id="payment" name="payment" value="Debit Card">
+  <label for="payment">Debit Card</label>
+<input type="radio" id="payment" name="payment" value="Google pay">
+  <label for="payment">Google pay</label>
+<input type="radio" id="payment" name="payment" value="Phone pe">
+  <label for="payment">Phone pe</label><br><br>
+<input type="checkbox" id="declaration" name="declaration" value="declaration">
+  <label for="declaration"> I here by declare that all the information provided is correct</label><br><br>
+<input type="submit" value="Submit"><br><br>
+</form>

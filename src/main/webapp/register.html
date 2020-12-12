@@ -1,0 +1,75 @@
+<Html>
+<head>
+<link href="style.css" type="text/css" rel="stylesheet"/> 
+<h1>
+Application Form
+</h1>
+<h3> (Application for bus pass) </h3>
+</head>
+<body bgcolor="#ffccff">
+
+<form method="POST" id="registration" action="issueServlet" enctype="multipart/form-data">
+<label> Firstname : </label>       
+<input type="text" name="firstname" size="15"/ required> <br> <br>
+<label> Lastname : </label>       
+<input type="text" name="lastname" size="15"/ required> <br> <br>
+<label> 
+Gender :
+ <input type="radio" id="male" name="gender" value="male" required>
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female" required>
+  <label for="female">Female</label>
+  <input type="radio" id="other" name="gender" value="other" required>
+  <label for="other">Other</label><br><br>
+<label for="DOB">Date of Birth:</label>
+  <input type="date" id="DOB" name="DOB" required><br><br>
+Bus Pass type :
+</label> 
+<select id="usertype" name="type" required>
+
+<option value="Student">Student</option>
+<option value="Employee">Employee</option>
+<option value="Senior Citizen">Senior Citizen</option>
+<option value="Physically Handicapped">Physically Handicapped</option>
+</select><br><br>
+<label> Aadhar number : </label>       
+<input type="text" pattern="^\d{12}$" name="Aadhar number" required> <br> <br>
+<label> Address : </label>
+<input type="text" name="Address" style = "length:200px" / required><br><br>
+<!-- <form action="upload.jsp" method="post" enctype="multipart/form-data"> -->
+   Identity Proof(Adhar card/Voter ID/Driving license):
+<input type="file" name="fileToUpload1" id="fileToUpload1">
+<br>
+<br>
+<!-- <form action="upload.jsp" method="post" enctype="multipart/form-data"> -->
+   Student id/Employee id/Age proof for senior citizen:
+<input type="file" name="fileToUpload2" id="fileToUpload2">
+<br>
+<br>
+City :
+</label> 
+<select id="City" name="city" required>
+<option value="Hyderabad">Hyderabad</option>
+<option value="Medak">Medak</option>
+<option value="Warangal">Warangal </option>
+
+<option value="Nizamabad">Nizamabad</option>
+</select><br><br>
+Payment Mode:
+<input type="radio" id="payment" name="payment" value="Credit Card" required>
+  <label for="payment">Credit Card</label>
+<input type="radio" id="payment" name="payment" value="Debit Card" required>
+  <label for="payment">Debit Card</label>
+<input type="radio" id="payment" name="payment" value="Google pay" required>
+  <label for="payment">Google pay</label>
+<input type="radio" id="payment" name="payment" value="Phone pe" required>
+  <label for="payment">Phone pe</label><br><br>
+<input type="checkbox" id="declaration" name="declaration" value="declaration" required>
+  <label for="declaration"> I here by declare that all the information provided is correct</label><br><br>
+<input type="submit" value="Submit"><br><br>
+</form>
+
+<p><a href="index.html">Logout</a></p>
+
+</div>
+
